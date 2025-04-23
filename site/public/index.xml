@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Добро пожаловать! on My New Hugo Site</title>
+    <title>EasyAccess on My New Hugo Site</title>
     <link>http://localhost:1313/Project-practice-2025/site/</link>
-    <description>Recent content in Добро пожаловать! on My New Hugo Site</description>
+    <description>Recent content in EasyAccess on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Apr 2025 14:23:43 +0600</lastBuildDate>
@@ -44,11 +44,11 @@
       <description></description>
     </item>
     <item>
-      <title>О проекте</title>
+      <title>О проекте EasyAccess</title>
       <link>http://localhost:1313/Project-practice-2025/site/about/</link>
       <pubDate>Wed, 23 Apr 2025 14:22:59 +0600</pubDate>
       <guid>http://localhost:1313/Project-practice-2025/site/about/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;наша-миссия&#34;&gt;&lt;strong&gt;Наша миссия&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;EasyAccess — это открытая платформа для создания инклюзивных веб-интерфейсов. Мы разрабатываем инструменты, которые помогают разработчикам и дизайнерам делать сайты доступными для людей с ограниченными возможностями здоровья (ОВЗ) &lt;strong&gt;без ущерба для эстетики и функциональности&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;как-устроен-проект&#34;&gt;&lt;strong&gt;Как устроен проект?&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-библиотека-готовых-тем&#34;&gt;🌐 &lt;strong&gt;Библиотека готовых тем&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;На &lt;a href=&#34;https://easyaccess.example.com&#34;&gt;официальном сайте EasyAccess&lt;/a&gt; (ссылка) доступны:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Готовые темы для популярных сайтов с поддержкой:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Высококонтрастных режимов&lt;/li&gt;&#xA;&lt;li&gt;Динамического изменения шрифтов&lt;/li&gt;&#xA;&lt;li&gt;Динамической адаптации интерфейсов&lt;/li&gt;&#xA;&lt;li&gt;Голосовой навигации&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Модерацию тем&lt;/strong&gt;: Все темы проходят строгую модерацию перед публикацией&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-конструктор-тем&#34;&gt;🛠 &lt;strong&gt;Конструктор тем&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Для тех, кто хочет создать уникальный дизайн:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
