@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Журнал проекта</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -18,166 +19,178 @@
       </div>
     </div>
   </header>
+  
   <nav>
-    <a href="index.html">Главная</a>
-    <a href="about.html">О проекте</a>
-    <a href="team.html">Участники</a>
-    <a href="journal.html">Журнал</a>
-    <a href="resources.html">Ресурсы</a>
+    <div class="nav-container">
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="journal.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+        </div>
+    </div>
   </nav>
 
-  <div class="journal-container">
-
-    <!-- Пост 1 -->
-    <div class="post-card">
-      <img src="images/lorem2.png" alt="Postman Screenshot">
-      <div class="post-content">
-        <h3>Покрытие API тестами: Postman и автопроверки</h3>
-        <p>Покрыли все основные эндпоинты API автотестами в Postman: создание, обновление, публикация пакетов, версии,
-          теги и авторизация.</p>
-        <a href="#" class="read-more">Читать далее</a>
-        <div class="hidden-details">
-          <ul>
-            <li><strong>POST /register</strong> — регистрация нового пользователя.</li>
-            <li><strong>POST /login</strong> — вход по существующему аккаунту.</li>
-            <li><strong>POST /token</strong> — обновление access токена.</li>
-            <li><strong>POST /packages</strong> — создание пакета.</li>
-            <li><strong>GET /packages/:id</strong> — получить пакет по ID.</li>
-            <li><strong>GET /packages/:slug</strong> — получить пакет по slug.</li>
-            <li><strong>PUT /packages</strong> — обновить пакет.</li>
-            <li><strong>GET /packages/:id/updated</strong> — получить обновлённый пакет.</li>
-            <li><strong>POST /packages/:id/version</strong> — добавить новую версию.</li>
-            <li><strong>GET /packages/:id/versions</strong> — список версий.</li>
-            <li><strong>GET /versions/:id</strong> — получить контент версии.</li>
-            <li><strong>POST /packages/:id/publish</strong> — публикация без прав (проверка).</li>
-            <li><strong>POST /packages/:id/tags</strong> — привязка тегов.</li>
-            <li><strong>GET /tags</strong> — получить список тегов.</li>
-            <li><strong>DELETE /tags/:id</strong> — удалить тег.</li>
-            <li><strong>POST /admin/login</strong> — вход админа.</li>
-            <li><strong>POST /admin/publish</strong> — публикация от имени админа.</li>
-            <li><strong>GET /packages/search</strong> — поиск пакетов по фильтрам.</li>
-          </ul>
-          <p>Каждый тест проверяет статус 200, валидность ID и slug, и соответствие переменным окружения. Это ускоряет
-            разработку и предотвращает регрессии.</p>
+  <div class="container">
+    <section class="animate-on-scroll">
+      <h2 class="section-title">Журнал разработки</h2>
+      <p>Следите за прогрессом нашего проекта и узнавайте о ключевых этапах разработки расширения EasyAccess.</p>
+    </section>
+    
+    <div class="journal-container">
+      <!-- Пост 1 -->
+      <div class="post-card animate-on-scroll">
+        <img src="images/lorem2.png" alt="Postman Screenshot">
+        <div class="post-content">
+          <h3>Покрытие API тестами: Postman и автопроверки</h3>
+          <p>Покрыли все основные эндпоинты API автотестами в Postman: создание, обновление, публикация пакетов, версии,
+            теги и авторизация.</p>
+          <a href="#" class="read-more">Читать далее</a>
+          <div class="hidden-details">
+            <ul>
+              <li><strong>POST /register</strong> — регистрация нового пользователя.</li>
+              <li><strong>POST /login</strong> — вход по существующему аккаунту.</li>
+              <li><strong>POST /token</strong> — обновление access токена.</li>
+              <li><strong>POST /packages</strong> — создание пакета.</li>
+              <li><strong>GET /packages/:id</strong> — получить пакет по ID.</li>
+              <li><strong>GET /packages/:slug</strong> — получить пакет по slug.</li>
+              <li><strong>PUT /packages</strong> — обновить пакет.</li>
+              <li><strong>GET /packages/:id/updated</strong> — получить обновлённый пакет.</li>
+              <li><strong>POST /packages/:id/version</strong> — добавить новую версию.</li>
+              <li><strong>GET /packages/:id/versions</strong> — список версий.</li>
+              <li><strong>GET /versions/:id</strong> — получить контент версии.</li>
+              <li><strong>POST /packages/:id/publish</strong> — публикация без прав (проверка).</li>
+              <li><strong>POST /packages/:id/tags</strong> — привязка тегов.</li>
+              <li><strong>GET /tags</strong> — получить список тегов.</li>
+              <li><strong>DELETE /tags/:id</strong> — удалить тег.</li>
+              <li><strong>POST /admin/login</strong> — вход админа.</li>
+              <li><strong>POST /admin/publish</strong> — публикация от имени админа.</li>
+              <li><strong>GET /packages/search</strong> — поиск пакетов по фильтрам.</li>
+            </ul>
+            <p>Каждый тест проверяет статус 200, валидность ID и slug, и соответствие переменным окружения. Это ускоряет
+              разработку и предотвращает регрессии.</p>
+          </div>
         </div>
+        <div class="post-date">20.03.2025</div>
       </div>
-      <div class="post-date">20.03.2025</div>
-    </div>
 
-    <!-- Пост 2 -->
-    <div class="post-card">
-      <img src="images/max.jpg" alt="Обработка PDF и DOCX">
-      <div class="post-content">
-        <h3>Обработка файлов PDF и DOCX</h3>
-        <p>Реализована универсальная функция обработки различных типов файлов: PDF, DOCX, изображений и таблиц.
-          Использованы популярные Python-библиотеки.</p>
-        <a href="#" class="read-more">Читать далее</a>
-        <div class="hidden-details">
-          <p><strong>Используемые библиотеки:</strong></p>
-          <ul>
-            <li><code>pdfplumber</code> — для обработки PDF-файлов (текст, таблицы, изображения).</li>
-            <li><code>python-docx</code> — для извлечения текста, таблиц и изображений из DOCX.</li>
-            <li><code>csv</code>, <code>StringIO</code>, <code>BytesIO</code> — для конвертации таблиц в формат CSV.
-            </li>
-            <li><code>base64</code> — для кодирования изображений и вставки их в HTML.</li>
-          </ul>
+      <!-- Пост 2 -->
+      <div class="post-card animate-on-scroll">
+        <img src="images/max.jpg" alt="Обработка PDF и DOCX">
+        <div class="post-content">
+          <h3>Обработка файлов PDF и DOCX</h3>
+          <p>Реализована универсальная функция обработки различных типов файлов: PDF, DOCX, изображений и таблиц.
+            Использованы популярные Python-библиотеки.</p>
+          <a href="#" class="read-more">Читать далее</a>
+          <div class="hidden-details">
+            <p><strong>Используемые библиотеки:</strong></p>
+            <ul>
+              <li><code>pdfplumber</code> — для обработки PDF-файлов (текст, таблицы, изображения).</li>
+              <li><code>python-docx</code> — для извлечения текста, таблиц и изображений из DOCX.</li>
+              <li><code>csv</code>, <code>StringIO</code>, <code>BytesIO</code> — для конвертации таблиц в формат CSV.
+              </li>
+              <li><code>base64</code> — для кодирования изображений и вставки их в HTML.</li>
+            </ul>
 
-          <p><strong>Алгоритм работы функции:</strong></p>
-          <ol>
-            <li><strong>Определение типа файла:</strong>
-              <ul>
-                <li>Если PDF — используется <code>pdfplumber</code>.</li>
-                <li>Если DOCX — используется <code>python-docx</code>.</li>
-              </ul>
-            </li>
+            <p><strong>Алгоритм работы функции:</strong></p>
+            <ol>
+              <li><strong>Определение типа файла:</strong>
+                <ul>
+                  <li>Если PDF — используется <code>pdfplumber</code>.</li>
+                  <li>Если DOCX — используется <code>python-docx</code>.</li>
+                </ul>
+              </li>
 
-            <li><strong>Обработка PDF:</strong>
-              <ul>
-                <li>Проход по всем страницам.</li>
-                <li>Извлечение текста → оборачивается в &lt;p&gt; и разбивается на абзацы.</li>
-                <li>Извлечение таблиц → конвертация в CSV → вывод в &lt;pre&gt;.</li>
-                <li>Извлечение изображений → кодировка в base64 → вставка в &lt;img&gt;.</li>
-              </ul>
-            </li>
+              <li><strong>Обработка PDF:</strong>
+                <ul>
+                  <li>Проход по всем страницам.</li>
+                  <li>Извлечение текста → оборачивается в &lt;p&gt; и разбивается на абзацы.</li>
+                  <li>Извлечение таблиц → конвертация в CSV → вывод в &lt;pre&gt;.</li>
+                  <li>Извлечение изображений → кодировка в base64 → вставка в &lt;img&gt;.</li>
+                </ul>
+              </li>
 
-            <li><strong>Обработка DOCX:</strong>
-              <ul>
-                <li>Текст: каждый непустой абзац оборачивается в &lt;p&gt;.</li>
-                <li>Таблицы: преобразование в CSV → отображение в &lt;pre&gt;.</li>
-                <li>Изображения: кодируются в base64 и вставляются как &lt;img&gt;.</li>
-              </ul>
-            </li>
-          </ol>
+              <li><strong>Обработка DOCX:</strong>
+                <ul>
+                  <li>Текст: каждый непустой абзац оборачивается в &lt;p&gt;.</li>
+                  <li>Таблицы: преобразование в CSV → отображение в &lt;pre&gt;.</li>
+                  <li>Изображения: кодируются в base64 и вставляются как &lt;img&gt;.</li>
+                </ul>
+              </li>
+            </ol>
 
-          <p>В результате формируется полноценная HTML-строка, отражающая структуру исходного документа: текст, таблицы
-            и изображения в удобном формате.</p>
+            <p>В результате формируется полноценная HTML-строка, отражающая структуру исходного документа: текст, таблицы
+              и изображения в удобном формате.</p>
+          </div>
         </div>
+        <div class="post-date">01.04.2025</div>
       </div>
-      <div class="post-date">01.04.2025</div>
-    </div>
 
 
-    <!-- Пост 3 -->
-    <div class="post-card">
-      <img src="images/lk.jpg" alt="Интеграция">
-      <div class="post-content">
-        <h3>Успешное прохождение второй аттестации проекта EasyAccess</h3>
-        <p>Команда проекта EasyAccess рада сообщить о успешном прохождении второй аттестации. На предзащите мы
-          продемонстрировали ключевые достижения и функционал расширения, получив высшую оценку комиссии.</p>
-        <a href="#" class="read-more">Читать далее</a>
-        <div class="hidden-details">
-          <p><strong>Что было представлено на аттестации?</strong></p>
-          <ol>
-            <li><strong>Редактор сайтов:</strong>
-              <ul>
-                <li>Инструмент для создания и настройки адаптивных сценариев под конкретные веб-ресурсы.</li>
-                <li>Возможность тестирования изменений в реальном времени.</li>
-              </ul>
-            </li>
-            <li><strong>Платформа с готовыми пакетами:</strong>
-              <ul>
-                <li>Библиотека предустановленных решений для популярных сайтов (соцсети, новостные порталы,
-                  образовательные платформы).</li>
-                <li>Фильтрация пакетов по категориям: "Для слабовидящих", "Для слабослышащих", "Упрощенный интерфейс".
-                </li>
-              </ul>
-            </li>
-            <li><strong>Экспорт и импорт настроек:</strong>
-              <ul>
-                <li>Пользователи могут сохранять свои конфигурации в формате JSON и делиться ими с сообществом.</li>
-                <li>Загрузка сторонних пакетов через встроенный маркетплейс расширения.</li>
-              </ul>
-            </li>
-            <li><strong>Демонстрация работы приложения:</strong>
-              <ul>
-                <li>Показаны кейсы адаптации сайтов: изменение цветовых схем, динамическое увеличение текста,
-                  синхронизация субтитров с видео.</li>
-                <li>Пример интеграции с YouTube, Wikipedia и онлайн-библиотеками.</li>
-              </ul>
-            </li>
-          </ol>
+      <!-- Пост 3 -->
+      <div class="post-card animate-on-scroll">
+        <img src="images/lk.jpg" alt="Интеграция">
+        <div class="post-content">
+          <h3>Успешное прохождение второй аттестации проекта EasyAccess</h3>
+          <p>Команда проекта EasyAccess рада сообщить о успешном прохождении второй аттестации. На предзащите мы
+            продемонстрировали ключевые достижения и функционал расширения, получив высшую оценку комиссии.</p>
+          <a href="#" class="read-more">Читать далее</a>
+          <div class="hidden-details">
+            <p><strong>Что было представлено на аттестации?</strong></p>
+            <ol>
+              <li><strong>Редактор сайтов:</strong>
+                <ul>
+                  <li>Инструмент для создания и настройки адаптивных сценариев под конкретные веб-ресурсы.</li>
+                  <li>Возможность тестирования изменений в реальном времени.</li>
+                </ul>
+              </li>
+              <li><strong>Платформа с готовыми пакетами:</strong>
+                <ul>
+                  <li>Библиотека предустановленных решений для популярных сайтов (соцсети, новостные порталы,
+                    образовательные платформы).</li>
+                  <li>Фильтрация пакетов по категориям: "Для слабовидящих", "Для слабослышащих", "Упрощенный интерфейс".
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Экспорт и импорт настроек:</strong>
+                <ul>
+                  <li>Пользователи могут сохранять свои конфигурации в формате JSON и делиться ими с сообществом.</li>
+                  <li>Загрузка сторонних пакетов через встроенный маркетплейс расширения.</li>
+                </ul>
+              </li>
+              <li><strong>Демонстрация работы приложения:</strong>
+                <ul>
+                  <li>Показаны кейсы адаптации сайтов: изменение цветовых схем, динамическое увеличение текста,
+                    синхронизация субтитров с видео.</li>
+                  <li>Пример интеграции с YouTube, Wikipedia и онлайн-библиотеками.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
         </div>
+        <div class="post-date">15.05.2025</div>
       </div>
-      <div class="post-date">15.05.2025</div>
     </div>
+    
+>
   </div>
 
-  <script>
-    document.querySelectorAll('.read-more').forEach(button => {
-      button.addEventListener('click', e => {
-        e.preventDefault();
-        const card = button.closest('.post-card');
-        const expanded = card.classList.toggle('expanded');
-        button.textContent = expanded ? 'Свернуть' : 'Читать далее';
-      });
-    });
-  </script>
   <footer class="site-footer">
     <div class="footer-content">
       <img src="images/logo.png" alt="EasyAccess Logo" class="footer-logo">
       <span>2025 EasyAccess</span>
     </div>
   </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

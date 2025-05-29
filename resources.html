@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <title>Ресурсы | EasyAccess</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
   <!-- Заголовок страницы -->
-
   <header>
     <div class="header-content">
       <img src="images/logo.png" alt="EasyAccess Logo" class="logo">
@@ -20,40 +19,93 @@
       </div>
     </div>
   </header>
+  
   <!-- Навигация -->
   <nav>
-    <a href="index.html">Главная</a>
-    <a href="about.html">О проекте</a>
-    <a href="team.html">Участники</a>
-    <a href="journal.html">Журнал</a>
-    <a href="resources.html">Ресурсы</a>
+    <div class="nav-container">
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="journal.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+        </div>
+    </div>
   </nav>
 
-  <main class="resources-container">
-    <div class="resource-card">
-      <h3><a href="https://developer.mozilla.org/ru/docs/Web/Accessibility" target="_blank">MDN Web Docs —
-          Доступность</a></h3>
-      <p>Подробное руководство по созданию доступных веб-интерфейсов. Особенно полезно для разработчиков расширений.</p>
-    </div>
-
-    <div class="resource-card">
-      <h3><a href="https://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative</a></h3>
-      <p>Международные стандарты и ресурсы по обеспечению цифровой доступности для людей с ограниченными возможностями.
-      </p>
-    </div>
-
-    <div class="resource-card">
-      <h3><a href="https://greasyfork.org/ru" target="_blank">GreasyFork — Скрипты для браузера</a></h3>
-      <p>Каталог пользовательских скриптов, аналогичный подходу EasyAccess. Здесь можно посмотреть примеры и
-        вдохновиться.</p>
-    </div>
-  </main>
-    <footer class="site-footer">
-        <div class="footer-content">
-            <img src="images/logo.png" alt="EasyAccess Logo" class="footer-logo">
-            <span>2025 EasyAccess</span>
+  <div class="container">
+    <section class="animate-on-scroll">
+      <h2 class="section-title">Полезные ресурсы</h2>
+      <p>Здесь собраны ссылки на полезные материалы и ресурсы, которые помогут лучше понять цели и технологическую базу проекта EasyAccess, а также узнать больше о доступности в интернете.</p>
+    </section>
+    
+    <main class="resources-container">
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://developer.mozilla.org/ru/docs/Web/Accessibility" target="_blank">MDN Web Docs — Доступность</a></h3>
+        <p>Подробное руководство по созданию доступных веб-интерфейсов. Особенно полезно для разработчиков расширений.</p>
+        <div class="resource-icon">
+          <i class="fas fa-book"></i>
         </div>
-    </footer>
+      </div>
+
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative</a></h3>
+        <p>Международные стандарты и ресурсы по обеспечению цифровой доступности для людей с ограниченными возможностями.</p>
+        <div class="resource-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+      </div>
+
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://greasyfork.org/ru" target="_blank">GreasyFork — Скрипты для браузера</a></h3>
+        <p>Каталог пользовательских скриптов, аналогичный подходу EasyAccess. Здесь можно посмотреть примеры и вдохновиться.</p>
+        <div class="resource-icon">
+          <i class="fas fa-code"></i>
+        </div>
+      </div>
+      
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://www.w3.org/TR/WCAG21/" target="_blank">Web Content Accessibility Guidelines (WCAG) 2.1</a></h3>
+        <p>Руководство по обеспечению доступности веб-контента, которое определяет, как сделать веб-контент более доступным для людей с ограниченными возможностями.</p>
+        <div class="resource-icon">
+          <i class="fas fa-universal-access"></i>
+        </div>
+      </div>
+      
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://developer.chrome.com/docs/extensions/" target="_blank">Chrome Extensions Documentation</a></h3>
+        <p>Официальная документация по разработке расширений для браузера Chrome, которая поможет понять, как создаются и работают расширения.</p>
+        <div class="resource-icon">
+          <i class="fab fa-chrome"></i>
+        </div>
+      </div>
+      
+      <div class="resource-card animate-on-scroll">
+        <h3><a href="https://github.com/topics/accessibility" target="_blank">GitHub - Проекты по доступности</a></h3>
+        <p>Коллекция проектов с открытым исходным кодом на GitHub, посвященных улучшению доступности в интернете.</p>
+        <div class="resource-icon">
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </main>
+    
+  </div>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <img src="images/logo.png" alt="EasyAccess Logo" class="footer-logo">
+      <span>2025 EasyAccess</span>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
